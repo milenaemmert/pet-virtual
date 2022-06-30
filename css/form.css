@@ -1,0 +1,112 @@
+/* >> Global */
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background-color: #FAB733;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* >> Formulario */
+form {
+    margin: 24px auto;
+    width: 296px;
+    border-radius: 36px;
+    background: #FFDD66;
+    height: 700px; 
+    padding: 16px;
+}
+
+.formulario-titulos {
+    color: #1976C7;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    margin: 16px;
+}
+
+.pets {
+    margin: 0 auto;
+    width: 100%;
+}    
+
+.pets-imagens {
+    width: 60px;
+    height: 68px;
+}
+
+.pets-imagens:hover {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.label-pets {
+    background-color: #FAB733;
+    border-radius: 12px;
+    width: 30%; 
+    margin: 1.5% 1.5% 24px;
+    padding-top: 4px;
+    text-align: center;
+    float: left;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #1976C7;
+}
+
+input[type="text"], select {
+    width: 100%;
+    margin: 8px 0 24px;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 12px;
+    padding: 0 16px;
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
+}
+
+select {
+    text-align: center;
+    color: #131313;
+}
+
+input[type="checkbox"] {
+    margin: 8px 4px 24px 0;
+}
+
+.label-checkbox {
+    color: #131313;
+    margin-right: 12px;
+}
+
+.enviar {
+    background-color: #FAB733;
+    color: #1976C7;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.enviar:hover {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
