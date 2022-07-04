@@ -1,5 +1,4 @@
 import { linkEspecies } from "../main.js"
-import { alterarVideoYoutube } from "./alteracaoVideo.js"
 
 export function alterarEspecie(petSelecionado) {
     const especie = document.querySelector('#especie')
@@ -9,6 +8,4 @@ export function alterarEspecie(petSelecionado) {
     especie.setAttribute('href', especieEncontrada.wiki)
     
     especie.innerText = especieEncontrada.texto
-
-    alterarVideoYoutube(especieEncontrada)
 }

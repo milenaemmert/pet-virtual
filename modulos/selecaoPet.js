@@ -15,3 +15,4 @@ export function selecionarPet() {
     const img = document.querySelector('.pet-imagem')
     img.setAttribute('src', `imagens/${petSelecionado}.png`)
 }
+

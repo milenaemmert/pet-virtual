@@ -3,6 +3,7 @@ import { nomearPet } from "./modulos/nomeacaoPet.js"
 import { tocarMusica } from "./modulos/musica.js"
 import { selecionarHobbies } from "./modulos/selecaoHobbies.js"
 import { esconderFormulario } from "./modulos/formularioDisplay.js"
+import { alterarVideoYoutube } from "./modulos/alteracaoVideo.js"
 
 export const linkEspecies = [
     {
@@ -53,6 +54,17 @@ formulario.onsubmit = function (e) {
     selecionarHobbies(nome)
     esconderFormulario()
 }
+
+
+const radioButton = document.getElementsByName('pets')
+
+radioButton.forEach(function(pet) {
+    pet.onclick = function() {
+        const nomePet = pet.value
+        const petSelecionado = linkEspecies.find(obj => obj.pet === nomePet)
+        alterarVideoYoutube(petSelecionado)
+    }
+})
 
 
 
