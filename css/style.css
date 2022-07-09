@@ -51,20 +51,15 @@ main {
     padding: 16px;
     text-align: center;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pet-curiosidades button {
-    width: 30%;
-    background-color: #FAB733;
-    color: #1976C7;
     text-align: center;
-    font-family: 'Baloo 2', cursive;
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 12px;
+    background-color: transparent;
     border: none;
-    margin-top: 8px;
 }
 
-    
    
