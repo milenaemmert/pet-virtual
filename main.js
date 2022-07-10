@@ -58,7 +58,7 @@ formulario.onsubmit = function (e) {
 
 const radioButton = document.getElementsByName('pets')
 
-radioButton.forEach(function(pet) {
+radioButton.forEach(pet => {
     pet.onclick = function() {
         const nomePet = pet.value
         const petSelecionado = linkEspecies.find(obj => obj.pet === nomePet)

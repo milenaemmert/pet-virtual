@@ -4,14 +4,13 @@ export function tocarMusica() {
     
     let musicaTocando
     let musicaPausada = false
-    tocar.addEventListener('click', function() {
+    tocar.addEventListener('click', () => {
         tocar.classList.add('display-none')
         const pausar = document.querySelector('#pausar')
         pausar.classList.remove('display-none')
-        //imgTocar.setAttribute('src', '../imagens/pause.png')
         
         const audios = document.querySelectorAll('.audio')
-        audios.forEach(function(estilo) {
+        audios.forEach(estilo => {
             let idDoEstilo = estilo.id
             if(estiloMusical.value === idDoEstilo) {
                 const musicaASerTocada = document.getElementById(idDoEstilo)
@@ -28,14 +27,14 @@ export function tocarMusica() {
         })
 
         //funcionou aqui, dentro desse clique, nao entendi bem o pq (voltar aqui depois!!!)
-        musicaTocando.addEventListener('ended', function() {
+        musicaTocando.addEventListener('ended', () => {
             tocar.classList.remove('display-none')
             pausar.classList.add('display-none')
         })
     })
 
     const parar = document.querySelector('#parar')
-    parar.addEventListener('click', function() {
+    parar.addEventListener('click', () => {
         
         musicaTocando.pause()
         musicaTocando.currentTime = 0
@@ -44,7 +43,5 @@ export function tocarMusica() {
             tocar.classList.remove('display-none')
             pausar.classList.add('display-none')
         }
-    })
-
-    
+    })  
 }

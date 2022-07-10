@@ -1,7 +1,7 @@
 export function selecionarHobbies(nome) {
     const checkboxes = document.querySelectorAll('.checkbox')
     const arrayHobbies = [] 
-    checkboxes.forEach(function (hobby) {
+    checkboxes.forEach(hobby => {
         if(hobby.checked) {                
             arrayHobbies.push(hobby.value)       
         }
