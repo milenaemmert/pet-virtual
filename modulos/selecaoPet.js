@@ -1,17 +1,16 @@
 import { alterarEspecie } from "./alteracaoEspecie.js"
 
 export function selecionarPet() {
+    const petSelecionado = document.querySelector('input[name="pets"]:checked').value
+
+    /* 
+    //usando o find:
     const pets = document.getElementsByName('pets')
-    let petSelecionado
-    for(let i = 0; i < pets.length; i++ ) {
-        if(pets[i].checked) {
-            petSelecionado = pets[i].value
-            console.log(petSelecionado)
-
-            alterarEspecie(petSelecionado)
-        }          
-    }
-
+    const petSelecionado = Object.values(pets)
+        .find(pet => pet.checked).value   
+    */
+   
+    alterarEspecie(petSelecionado)
     const img = document.querySelector('.pet-imagem')
     img.setAttribute('src', `imagens/${petSelecionado}.png`)
 }
