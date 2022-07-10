@@ -25,7 +25,7 @@ header {
     right: 0;
 }
 
-a {
+.link-especie {
     font-style: italic;
     color: #131313;
     font-size: 18px;
