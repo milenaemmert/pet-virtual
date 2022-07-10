@@ -1,16 +1,13 @@
 export function selecionarHobbies(nome) {
     const checkboxes = document.querySelectorAll('.checkbox')
-    const arrayHobbies = [] 
-    checkboxes.forEach(hobby => {
-        if(hobby.checked) {                
-            arrayHobbies.push(hobby.value)       
-        }
-    })
-
+    const hobbiesSelecionados = Object.values(checkboxes)
+        .filter(hobby => hobby.checked)
+        .map(hobby => hobby.value)
+    
     const hobbies = document.querySelector('#hobbies')
-    hobbies.textContent = `${nome} gosta de ${arrayHobbies.join(', ')}.`
+    hobbies.textContent = `${nome} gosta de ${hobbiesSelecionados.join(', ')}.`
 
-    if(arrayHobbies.length < 1) {
+    if(hobbiesSelecionados.length < 1) {
         hobbies.textContent = `${nome} não gosta de nada!`
     }
 }
