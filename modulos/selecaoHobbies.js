@@ -8,9 +8,9 @@ export function selecionarHobbies(nome) {
     })
 
     const hobbies = document.querySelector('#hobbies')
-    hobbies.innerText = `${nome} gosta de ${arrayHobbies.join(', ')}.`
+    hobbies.textContent = `${nome} gosta de ${arrayHobbies.join(', ')}.`
 
     if(arrayHobbies.length < 1) {
-        hobbies.innerText = `${nome} não gosta de nada!`
+        hobbies.textContent = `${nome} não gosta de nada!`
     }
 }

@@ -7,5 +7,5 @@ export function alterarEspecie(petSelecionado) {
     console.dir('especie encontrada' + especieEncontrada)
     especie.setAttribute('href', especieEncontrada.wiki)
     
-    especie.innerText = especieEncontrada.texto
+    especie.textContent = especieEncontrada.texto
 }
