@@ -15,7 +15,7 @@
         <h2 class="formulario-titulos">Pet Virtual</h2>
 
         <div class="pets">
-            <input type="radio" name="pets" id="coelho" value="coelho" checked>
+            <input type="radio" name="pets" id="coelho" value="coelho">
             <label for="coelho" class="label-pets"><img src="imagens/coelho.png" class="pets-imagens"></label>
 
             <input type="radio" name="pets" id="unicornio"  value="unicornio">
@@ -57,38 +57,47 @@
         </fieldset>     
         
         <input type="submit" value="Enviar" class="enviar">
+        
     </form>
+    
+    <div class="link-licenca"><a href="https://br.freepik.com/autor/catalyststuff" target="_blank">Ilustrações por catalyststuff</a></div>
+    
 
     <!-- Resultado >> Pet Virtual -->
 
     <div class="display-none" id="petVirtual">
         <header>
             <div class="header-container">
-                <img src="imagens/dino.png" class="pet-imagem">
+                <img src="#" class="pet-imagem">
                 <h1 class="pet-nome"></h1>
-                <a href="https://pt.wikipedia.org/wiki/Tiranossauro" target="_blank" id="especie">Tyrannosaurus</a>
+                <a href="#" target="_blank" id="especie" class="link-especie">Tyrannosaurus</a>
             </div>
         </header>
     
         <main>
             <div class="pet-curiosidades">
-                <p id="musica">Estilo musical:</p>
-                <button id="tocar">Tocar</button>
-                <button id="parar">Parar</button>
+                <p id="musica">Estilo musical</p>
+                <div><button id="tocar"><img src="imagens/play.png" alt="Play"></button>
+                <button id="pausar" class="display-none"><img src="imagens/pause.png" alt="Pause"></button>
+                <button id="parar"><img src="imagens/stop.png" alt="Pause"></button></div>
             </div>
 
             <div class="pet-curiosidades">
-                <p id="hobbies">Hobbies:</p>
+                <p id="hobbies">Hobbies</p>
             </div>
           
-            <iframe width="100%" height="160" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            <iframe width="100%" height="160" src="#" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+
         </main>
+        
     </div>
 
     <audio src="musicas/classica.wav" id="classica" class="audio"></audio>
     <audio src="musicas/pop.wav" id="pop" class="audio"></audio>
     <audio src="musicas/rock.wav" id="rock" class="audio"></audio>
 
-    <script src="main.js"></script>
+    
+    <script type="module" src="main.js"></script>
+
 </body>
 </html>

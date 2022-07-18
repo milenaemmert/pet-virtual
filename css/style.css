@@ -25,7 +25,7 @@ header {
     right: 0;
 }
 
-a {
+.link-especie {
     font-style: italic;
     color: #131313;
     font-size: 18px;
@@ -47,24 +47,24 @@ main {
     background-color: #FFDD66;
     width: 100%;
     margin-bottom: 16px;
-    height: 96px;
+    height: 120px;
     padding: 16px;
     text-align: center;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pet-curiosidades p{
+    margin-bottom: 16px;
 }
 
 .pet-curiosidades button {
-    width: 30%;
-    background-color: #FAB733;
-    color: #1976C7;
     text-align: center;
-    font-family: 'Baloo 2', cursive;
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 12px;
+    background-color: transparent;
     border: none;
-    margin-top: 8px;
 }
 
-    
    

@@ -14,8 +14,22 @@ form {
     width: 296px;
     border-radius: 36px;
     background: #FFDD66;
-    height: 700px; 
+    height: 650px; 
     padding: 16px;
+    position: relative;
+}
+.link-licenca { 
+    position: absolute;
+    font-size: 13px;
+    top: 650px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link-licenca a {
+    color: #131313;
 }
 
 .formulario-titulos {
@@ -99,7 +113,6 @@ input[type="checkbox"] {
     font-weight: 700;
     font-size: 20px;
     border-radius: 12px;
-    margin-top: 24px;
 }
 
 .enviar:hover {
@@ -109,4 +122,5 @@ input[type="checkbox"] {
 .display-none {
     display: none;
 }
+
 
