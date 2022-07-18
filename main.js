@@ -46,30 +46,12 @@ export const linkEspecies = [
 
 const formulario = document.querySelector('#formulario')
 
-formulario.onsubmit = function (e) {
+formulario.addEventListener('submit', function (e) {
     e.preventDefault()
     selecionarPet()
     const nome = nomearPet() 
     tocarMusica()
     selecionarHobbies(nome)
     esconderFormulario()
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
 
